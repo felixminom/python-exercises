@@ -4,4 +4,4 @@ This repo contains some Python exercises based mainly on the official documentat
 
 All exercises are created with `Python3.9.1`.
 
-This repo uses `virtualenv` to run different files locally. 
+This repo uses `virtualenv` to run different files locally.
