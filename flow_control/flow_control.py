@@ -113,3 +113,38 @@ class PassClass():
 def pass_function():
     pass
 
+
+#Enumerate
+
+#imagine that, in addition to the value itself,you want to print the index
+#of the item in the list to the screen on every iteration. One way to
+#approach this task is to create a variable to store the index and update
+#it on each iteration:
+
+values = ['a','b','c','d','e']
+index = 0
+
+for value in values:
+    print(index, value)
+    index += 1
+
+#Another common way to approach this problem is to use range() combined
+#with len() to create an index automatically.
+#this loop isn’t considered Pythonic.
+
+for index in range(len(values)):
+    value = values[index]
+    print(index, value)
+
+#You can use enumerate() in a loop in almost the same way that you use
+#the original iterable object. Instead of putting the iterable directly
+#after in in the for loop, you put it inside the parentheses of enumerate().
+
+for count, value in enumerate(values):
+    print(count, value)
+
+#Python’s enumerate() has one additional argument that you can use to control
+#the starting value of the count.
+
+for count, value in enumerate(values, start=1):
+    print(count, value)
